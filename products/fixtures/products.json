@@ -1,0 +1,364 @@
+[
+    {
+       "pk": 1,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240008",
+          "name": "Xbox Series X",
+          "description": "The Xbox Series X is the fastest, most powerful Xbox ever, with stunning graphics and speed, featuring the latest in gaming technology.",
+          "price": "499.99",
+          "category": 6, 
+          "rating": "4.8",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/g/o/godlike-burger-button-01-1612374917359_5_.jpg",
+          "image": "xbox_seriesx.jpg",
+          "genre": "Console",
+          "platform": "Xbox Series X",
+          "release_date": "2020-11-10",
+          "publisher": "Microsoft"
+       }
+    },
+    {
+       "pk": 2,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240009",
+          "name": "PlayStation 5",
+          "description": "The PlayStation 5 is the latest gaming console from Sony, featuring lightning-fast load times, stunning graphics, and immersive gameplay.",
+          "price": "499.99",
+          "category": 7, 
+          "rating": "4.9",
+          "image_url": "https://www.game.co.uk/images/products/84841169_l.jpg",
+          "image": "PS5.jpg",
+          "genre": "Console",
+          "platform": "PlayStation 5",
+          "release_date": "2020-11-12",
+          "publisher": "Sony Interactive Entertainment"
+       }
+    },
+    {
+       "pk": 3,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240010",
+          "name": "Nintendo Switch",
+          "description": "The Nintendo Switch is a versatile gaming console that allows you to play your favorite games at home or on the go, featuring unique controls and a vast library of games.",
+          "price": "299.99",
+          "category": 3, 
+          "rating": "4.7",
+          "image_url": "https://www.game.co.uk/images/products/38868490_l.jpg",
+          "image": "nintendo.jpg",
+          "genre": "Console",
+          "platform": "Nintendo Switch",
+          "release_date": "2017-03-03",
+          "publisher": "Nintendo"
+       }
+    },
+    {
+       "pk": 4,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240001",
+          "name": "Call of Duty: Black Ops 6",
+          "description": "The latest installment in the Black Ops series, Call of Duty: Black Ops 6 brings intense action, gripping storytelling, and a new era of tactical combat to the franchise.",
+          "price": "69.99",
+          "category": 7, 
+          "rating": "4.7",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/c/a/call_of_duty-_black_ops_6_-_cross-gen_bundle_1.jpg",
+          "image": "cod_img.jpg",
+          "genre": "First-Person Shooter",
+          "platform": "PlayStation 5, Xbox Series X/S, PC",
+          "release_date": "2024-11-12",
+          "publisher": "Activision"
+       }
+    },
+    {
+       "pk": 5,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240002",
+          "name": "Mario Kart 8 Deluxe",
+          "description": "Race your friends or battle them in a revised battle mode on new and returning battle courses in the ultimate version of Mario Kart 8.",
+          "price": "59.99",
+          "category": 3, 
+          "rating": "4.9",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/b/a/babylons-fall-pc-game-steam-cover_2_.jpg",
+          "image": "mario_kart.jpg",
+          "genre": "Racing",
+          "platform": "Nintendo Switch",
+          "release_date": "2017-04-28",
+          "publisher": "Nintendo"
+       }
+    },
+    {
+       "pk": 6,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240003",
+          "name": "Cyberpunk 2077",
+          "description": "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour, and body modification.",
+          "price": "49.99",
+          "category": 6, 
+          "rating": "4.3",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/1/1/111-1119967_cyberpunk-2077-yellow-plain-background-wallpaper-cyberpunk-2077_4.jpg",
+          "image": "samurai.jpg",
+          "genre": "Action RPG",
+          "platform": "PlayStation 4, Xbox One, PC",
+          "release_date": "2020-12-10",
+          "publisher": "CD Projekt"
+       }
+    },
+    {
+       "pk": 7,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240004",
+          "name": "Sea of Thieves",
+          "description": "Sea of Thieves offers the essential pirate experience, from sailing and fighting to exploring and looting – everything you need to live the pirate life.",
+          "price": "29.99",
+          "category": 6, 
+          "rating": "4.4",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/h/e/hero_8_.jpg",
+          "image": "sot_img.jpg",
+          "genre": "Action-Adventure",
+          "platform": "Xbox One, PC",
+          "release_date": "2018-03-20",
+          "publisher": "Microsoft Studios"
+       }
+    },
+    {
+       "pk": 8,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240005",
+          "name": "Wolfenstein II: The New Colossus",
+          "description": "Fight for the future in this critically acclaimed first-person shooter, where you join the resistance against the Nazi regime in an alternate history 1960s America.",
+          "price": "49.99",
+          "category": 6, 
+          "rating": "4.5",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/w/o/wolfenstein_ii_the_new_colossus_pc_cover_1.jpg",
+          "image": "wolfenstein.jpg",
+          "genre": "First-Person Shooter",
+          "platform": "PlayStation 4, Xbox One, Nintendo Switch",
+          "release_date": "2017-10-27",
+          "publisher": "Bethesda"
+       }
+    },
+    {
+       "pk": 9,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240006",
+          "name": "Elden Ring",
+          "description": "Elden Ring is an expansive open-world action RPG that combines FromSoftware's iconic storytelling and challenging gameplay in a vast and rich environment.",
+          "price": "59.99",
+          "category": 7, 
+          "rating": "4.9",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/e/l/elden_ring_pc.jpg",
+          "image": "elden_ring.jpg",
+          "genre": "Action RPG",
+          "platform": "PlayStation 5, Xbox Series X/S, PC",
+          "release_date": "2022-02-25",
+          "publisher": "Bandai Namco Entertainment"
+       }
+    },
+    {
+       "pk": 10,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240007",
+          "name": "Dead by Daylight",
+          "description": "Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, while the other four players are Survivors trying to escape the Killer and avoid being caught.",
+          "price": "29.99",
+          "category": 6, 
+          "rating": "4.2",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/g/o/godlike-burger-button-01-1612374917359_5_.jpg",
+          "image": "dbd.jpg",
+          "genre": "Survival Horror",
+          "platform": "PlayStation 4, Xbox One, Nintendo Switch, PC",
+          "release_date": "2016-06-14",
+          "publisher": "Behaviour Interactive"
+       }
+    },
+    {
+       "pk": 11,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240008",
+          "name": "Hades",
+          "description": "Hades is a rogue-like dungeon crawler that combines fast-paced action with a rich narrative set in the world of Greek mythology.",
+          "price": "24.99",
+          "category": 6, 
+          "rating": "4.9",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/c/a/call_of_duty-_black_ops_6_-_cross-gen_bundle_1.jpg",
+          "image": "hades.jpg",
+          "genre": "Rogue-like",
+          "platform": "PlayStation 4, Nintendo Switch, PC",
+          "release_date": "2020-09-17",
+          "publisher": "Supergiant Games"
+       }
+    },
+    {
+       "pk": 12,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240009",
+          "name": "Stardew Valley",
+          "description": "Stardew Valley is a farming simulation game where players can grow crops, raise animals, mine, fish, and build their farm while interacting with a charming town.",
+          "price": "14.99",
+          "category": 4, 
+          "rating": "4.8",
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/c/a/call_of_duty-_black_ops_6_-_cross-gen_bundle_1.jpg",
+          "image": "stardew_valley.jpg",
+          "genre": "Simulation",
+          "platform": "PlayStation 4, Xbox One, Nintendo Switch, PC",
+          "release_date": "2016-02-26",
+          "publisher": "ConcernedApe"
+       }
+    },
+    {
+       "pk": 11,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240011",
+          "name": "Forza Horizon 5",
+          "description": "Explore the vibrant open world of Mexico in the latest Forza game.",
+          "price": 59.99,
+          "category": 1,
+          "rating": 4.9,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/u/n/untitled-1_1__2.jpg",
+          "image": "forza.jpg",
+          "genre": "Racing",
+          "platform": "Xbox Series X",
+          "release_date": "2021-11-09",
+          "publisher": "Xbox Game Studios"
+       }
+    },
+    {
+       "pk": 12,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240012",
+          "name": "The Last of Us Part I",
+          "description": "Experience a harrowing story in a post-apocalyptic world.",
+          "price": 49.99,
+          "category": 2,
+          "rating": 4.8,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/e/g/egs_wildhearts_koeitecmogamescoltd_s2_1200x1600-398fdb8dbc918051f99347ebe0335973_3_.jpg",
+          "image": "lou.jpg",
+          "genre": "Action-adventure",
+          "platform": "PlayStation 4",
+          "release_date": "2020-06-19",
+          "publisher": "Naughty Dog"
+       }
+    },
+    {
+       "pk": 13,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240013",
+          "name": "Zelda: Breath of the Wild",
+          "description": "An open-world adventure game set in the expansive land of Hyrule.",
+          "price": 59.99,
+          "category": 3,
+          "rating": 4.9,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/t/h/the_legend_of_zelda_-_breath_of_the_wild_switch_cover.png",
+          "image": "zelda.jpg",
+          "genre": "Action-adventure",
+          "platform": "Nintendo Switch",
+          "release_date": "2017-03-03",
+          "publisher": "Nintendo"
+       }
+    },
+    {
+       "pk": 14,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240014",
+          "name": "Assassin's Creed Valhalla",
+          "description": "Step into the shoes of a Viking raider in this epic action RPG.",
+          "price": 59.99,
+          "category": 1,
+          "rating": 4.5,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/h/e/header_10_17_.jpg",
+          "image": "assassins.jpg",
+          "genre": "Action RPG",
+          "platform": "PlayStation 5",
+          "release_date": "2020-11-10",
+          "publisher": "Ubisoft"
+       }
+    },
+    {
+       "pk": 15,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240015",
+          "name": "FIFA 23",
+          "description": "The latest installment in the popular soccer video game series.",
+          "price": 59.99,
+          "category": 1,
+          "rating": 4.4,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/a/a/aaaa_5.jpg",
+          "image": "fifa.jpg",
+          "genre": "Sports",
+          "platform": "Xbox Series X",
+          "release_date": "2021-10-01",
+          "publisher": "EA Sports"
+       }
+    },
+    {
+       "pk": 16,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240016",
+          "name": "Ghost of Tsushima",
+          "description": "An open-world action-adventure game set in feudal Japan.",
+          "price": 49.99,
+          "category": 2,
+          "rating": 4.8,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/g/h/ghost_of_tsushima_directors_cut-steam.jpg",
+          "image": "ghost.jpg",
+          "genre": "Action-adventure",
+          "platform": "PlayStation 4",
+          "release_date": "2020-07-17",
+          "publisher": "Sucker Punch Productions"
+       }
+    },
+    {
+       "pk": 17,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240017",
+          "name": "Sunset overdrive",
+          "description": " An open-world playground of post-apocalyptic possibilities ",
+          "price": 39.99,
+          "category": 1,
+          "rating": 4.3,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/s/u/sunset-overdrive-pc-cd-key.jpg",
+          "image": "overdrive.jpg",
+          "genre": "First-person shooter",
+          "platform": "Xbox Series X",
+          "release_date": "2022-10-04",
+          "publisher": "Blizzard Entertainment"
+       }
+    },
+    {
+       "pk": 18,
+       "model": "products.product",
+       "fields": {
+          "sku": "gme20240018",
+          "name": "Animal Crossing: New Horizons",
+          "description": "Create your dream island life in this charming simulation game.",
+          "price": 59.99,
+          "category": 3,
+          "rating": 4.9,
+          "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/f/i/fifa-22-pc-game-origin-cover_14_.jpg",
+          "image": "animal.jpg",
+          "genre": "Simulation",
+          "platform": "Nintendo Switch",
+          "release_date": "2020-03-20",
+          "publisher": "Nintendo"
+       }
+    }
+ 
+       
+ ]
