@@ -67,3 +67,60 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
+/* -------------------------------- Media Queries */
+
+/* this id is for helping me achieve getting my website to look nice on smaller screens!*/
+
+/* Default styling for small screens */
+#responsive-heading {
+    font-size: 1.2rem; 
+    font-weight: 600;  
+}
+
+/* Medium screens and above (Laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Laptops and smaller desktops */
+    .custom-heading-container {
+        padding: 5rem 1rem; 
+        height: auto; 
+    }
+
+    #responsive-heading {
+        font-size: 2.5rem; 
+        font-weight: 700;  
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%; 
+    }
+
+    .custom-heading-container {
+        padding: 6rem 1rem; 
+        height: auto; 
+    }
+
+    #responsive-heading {
+        font-size: 3rem; 
+        font-weight: 700; 
+        line-height: 1.2; 
+    }
+}
+
+/* Fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
