@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+
 /*used from boutique ado to ensure homepage image lookes nice and fits within the project*/
 
 body {
@@ -68,6 +69,29 @@ body {
     border: 1px solid black !important;
 }
 
+/*FOOTER----------------------------------------------------------------------------------------------------------------------*/
+
+
+#social-networks {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#social-networks i {
+    font-size: 130%;
+    padding: 5%;
+    color: #fff;
+}
 /* -------------------------------- Media Queries */
 
 /* this id is for helping me achieve getting my website to look nice on smaller screens!*/
