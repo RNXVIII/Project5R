@@ -1,131 +1,166 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project 5
 
-Welcome USER_NAME,
+<h2><img src="media/homepage.png"></h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## A website about a game store website 
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
 
-## Gitpod Reminders
+# features 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+while this project doesnt have alot of features, id like to show what makes this website stand out to the walkthrough project
+(while this project does have more features, these features are unaltered from boutique ado so i will not add them.) 
 
-`python3 -m http.server`
+- data models
+- custom fixtures 
 
-A blue button should appear to click: _Make Public_,
+<h2><img src="media/model.png"></h2>
 
-Another blue button should appear to click: _Open Browser_.
+apart from very minor details this project uses all of its resources from the boutique ado to:
+- make sure everything runs and looks correct
+- to help with time management 
+- to make sure that everything used in this project does not break plagirism rules by using code i do fully understand 
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Features left to impliment
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+if i hadnt left this so late the features i would of like to implement to make this website stand out more and also what wouldve covered some of the criteria 
 
-To log into the Heroku toolbelt CLI:
+- CRUD functionality (in any way)
+- any way to sort products 
+- the search bar 
+- a way to buy products 
+- a personalised profile page 
+- a way to see stock on products (a value on the data model)
+-
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# my User stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+i tried doing as much as i could in getting a way to have a to do list for all the thing i had to impliment
 
-### Connecting your Mongo database
+[User-Stories](https://github.com/RNXVIII/project-5-blog)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+# Languages used 
 
-------
+[Python](https://www.python.org/)
 
-## Release History
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
+<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+[CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-**June 18, 2024,** Add Mongo back into template
+# Diagrams, Flowcharts and ERDS
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+i sadly didnt have time to make any charts or diagrams for my project.
 
-**May 28 2024:** Fix Mongo and Links installs
+# deployment
 
-**April 26 2024:** Update node version to 16
+the tool used to deploy this project is heroku.
 
-**September 20 2023:** Update Python version to 3.9.17.
+to deploy a simple heroku app, you need to setupp the enviroment to herokus needs and also to link your repository
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+to deploy your repository on to heroku is simple:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+create/sign in to an account 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+create an "app" 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+link your github account to your heroku account 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+search for your repository 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+adjust your app_config to its needs
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+search for your repository 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+deploy it!
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# Validators 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+as this project isnt properly configured i havent validated anything but ill link all the validators i would of used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+the [W3C CSS validator](https://jigsaw.w3.org/css-validator/validator)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+the [W3C validator](https://validator.w3.org/)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+the [JSHint](https://jshint.com/)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+the [PEP8](https://peps.python.org/pep-0008/)
 
-------
+# Testing 
 
-## FAQ about the uptime script
+sadly i couldnt make any python test files to test my applications features
 
-**Why have you added this script?**
+# Credit 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+all credit in this project goes to [code-institute](https://codeinstitute.net/)
 
-**How will this affect me?**
+because of the boutique ado project
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Libaries and tools used
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Font Awesome [icons](https://fontawesome.com/)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+[bootstrap](https://getbootstrap.com/)
 
-**So….?**
+[google-Fonts](https://fonts.google.com/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+the packages i installed (for now) to make this was:
 
-**Can I opt out?**
+allauth
+psycopg2
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+# Important
 
-**Anything more?**
+## why is the project like this?
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+honestly shortest awnser to this was i was lazy after my previous submissions and got lazy , i also thought that the project 5 deadline was on 15/11/24 and not the true 15/10/24 which didnt help
 
----
+i used all of my time until 13/10/24 trying to get ready for the project 4 resubmission and was told to do as much as i can for project 5 so i have a submission and ever since the 13th (excluding friday , saturday and sundays) i have been using all my time trying to make some sort of project to show ive learned , tried and done work , appologies in advance while this does not excuse my behaviour or change my mark in anyway , its alot easier to understand why this project is so barbones when you know why .
 
-Happy coding!
+
+## what am i going to do next 
+
+i am going to continue doing all of the coursework and hopefully be able to give in a much more detailed project in the future
+
+what i would of done if i had more time on the course is i would of followed more of the walkthrough and altered it to my needs to further insure im using all the time as efficently as i can.
+
+## what criteria i havent covered 
+
+i did add a couple things here there that would help with passing the criteria but i thought it be good to highligh it here 
+
+SEO implementation, including:
+A robots.txt file
+A sitemap.xml file
+finish the checkout app 
+complete the Profile app
+email verification
+tests.py
+
+The requirements for an e-commerce business model:
+
+The necessity for the inclusion of an e-commerce business model, highlighting the purpose of the application as either B2B or B2C focused, and detailing the core business intents and marketing strategies for the application.
+
+Implement a custom 404 page.
+
+A custom 404 error page must be implemented for improved overall UX.
+Remember to use and implement agile methodologies throughout your project creation.
+Ensure you use an agile tool, such as Github projects, to track the tasks involved in creating your project.
+Relate tasks to specifically identified user stories.
+One or two tasks that cover all user stories will not be assessed as sufficient.
+
+# what happened
+
+ i want to give an appology to the people i promised that this would be done and i dont even have time to fix this READ.MD 
+
+ ## what went wrong
+
+ i spent so much times fixing errors or the way things look it ate up all my time. i started on the 9th (even though it says 13 i had to restart my project due to how lackluster it became so quickly) i honestly dont have an excuse, even i thought i would manage to do this but im afraid not
+while there has been significant progress made its still not enough and i just want to appologise to the examiners and also the lovely people down in dublin who gave me a heads up about not being able to get more time, which while fustrating is fair as ive had more than enough time.
+
+speaking of time i did plan using agile tools and planeed this but i still didnt have time 
+
+i hope you still enjoy what ive given you and hopefully i can gain a much better understanding of this.
+
+
