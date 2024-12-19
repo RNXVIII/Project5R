@@ -1,0 +1,369 @@
+/* Ensure the body and HTML take up the full height */
+html {
+    height: 100%;
+}
+
+/* used from boutique ado to ensure homepage image looks nice and fits within the project */
+body {
+    background: url('/media/background_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555; 
+    font-family: 'Lato';
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #323333;
+    color: white !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.bg-purple {
+    background-color: #BF40BF;
+    border-radius: 10px;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* from tutorial -------------------------------------------------------- */
+span.badge {
+    background: #323333 !important;
+    color: #fff !important;
+}
+
+/* Back-to-Top Button */
+.btt-button {
+    height: 50px; 
+    width: 50px;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    background-color: #f8f9fa; 
+    border: 2px solid #000; 
+    border-radius: 50%; 
+    z-index: 1050; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.btt-button:hover {
+    background-color: #e0e0e0; 
+    border-color: #444;
+}
+
+.btt-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btt-link i {
+    color: #000; 
+    font-size: 1.5rem; 
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* FOOTER ---------------------------------------------------------------------------------------------------------------------- */
+#social-networks {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#social-networks i {
+    font-size: 130%;
+    padding: 5%;
+    color: #fff;
+}
+
+/* shopping bag specific styling --------------------------------------------------------*/
+.shopping-bag-container {
+    background-color: #323333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+
+/* Row adjustments for spacing inside shopping bag */
+.shopping-bag-container .row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.shopping-bag-container .col-12 {
+    margin-bottom: 1.5rem; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+}
+
+.my-0 {
+    color: white; 
+}
+
+/* Adjust the box styles to be vertically aligned in the row */
+.image-container,
+.product-details-container {
+    background-color: #323333; 
+    color: #fff; 
+    padding: 1.5rem; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    flex: 1; 
+    min-width: 45%; 
+}
+
+/* Product Card Styling - Adjustments to ensure they align nicely */
+.product-card {
+    background-color: #323333; 
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.product-card .card-body {
+    background-color: transparent;
+    color: white;
+}
+
+.product-card .card-footer {
+    background-color: transparent;
+    color: white;
+}
+
+.product-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.logo-font {
+    color: white;
+}
+
+.products-title {
+    color: white;
+    background-color: #323333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Default styling for small screens */
+#responsive-heading {
+    font-size: 1.2rem; 
+    font-weight: 600;  
+}
+
+/* Medium screens and above (Laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Laptops and smaller desktops */
+    .custom-heading-container {
+        padding: 5rem 1rem; 
+        height: auto; 
+    }
+
+    #responsive-heading {
+        font-size: 2.5rem; 
+        font-weight: 700;  
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%; 
+    }
+
+    .custom-heading-container {
+        padding: 6rem 1rem; 
+        height: auto; 
+    }
+
+    #responsive-heading {
+        font-size: 3rem; 
+        font-weight: 700; 
+        line-height: 1.2; 
+    }
+}
+
+/* Fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* Pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
