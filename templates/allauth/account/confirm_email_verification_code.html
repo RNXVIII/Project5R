@@ -1,48 +1,66 @@
-{% extends "account/base_entrance.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% load allauth account %}
+
 {% block head_title %}
-    {% translate "Email Verification" %}
+    {% trans "Email Verification" %}
 {% endblock head_title %}
+
 {% block content %}
-    {% element h1 %}
-        {% translate "Enter Email Verification Code" %}
-    {% endelement %}
-    {% setvar email_link %}
-        <a href="mailto:{{ email }}">{{ email }}</a>
-    {% endsetvar %}
-    {% element p %}
-        {% blocktranslate %}We’ve sent a code to {{ email_link }}. The code expires shortly, so please enter it soon.{% endblocktranslate %}
-    {% endelement %}
-    {% url 'account_email_verification_sent' as action_url %}
-    {% element form form=form method="post" action=action_url tags="entrance,email,verification" %}
-        {% slot body %}
-            {% csrf_token %}
-            {% element fields form=form unlabeled=True %}
-            {% endelement %}
-            {{ redirect_field }}
-        {% endslot %}
-        {% slot actions %}
-            {% element button type="submit" tags="prominent,confirm" %}
-                {% translate "Confirm" %}
-            {% endelement %}
-            {% if cancel_url %}
-                {% element button href=cancel_url tags="link,cancel" %}
-                    {% translate "Cancel" %}
+    <!-- Full screen background with image -->
+    <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center" 
+         style="background: url('/media/background_image.jpg') no-repeat center center fixed; 
+                background-size: cover;">
+
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-6 col-lg-4 bg-dark p-5 rounded shadow-lg" style="background-color: #323333;">
+                <!-- Title for Email Verification -->
+                <h1 class="text-center text-white mb-4">
+                    {% trans "Enter Email Verification Code" %}
+                </h1>
+
+                <!-- Verification Instructions -->
+                {% setvar email_link %}
+                    <a href="mailto:{{ email }}" class="text-white">{{ email }}</a>
+                {% endsetvar %}
+                <p class="text-center text-white mb-4">
+                    {% blocktranslate %}We’ve sent a code to {{ email_link }}. The code expires shortly, so please enter it soon.{% endblocktranslate %}
+                </p>
+
+                <!-- Verification Form -->
+                {% url 'account_email_verification_sent' as action_url %}
+                {% element form form=form method="post" action=action_url tags="entrance,email,verification" %}
+                    {% slot body %}
+                        {% csrf_token %}
+                        {% element fields form=form unlabeled=True %}
+                        {% endelement %}
+                        {{ redirect_field }}
+                    {% endslot %}
+                    {% slot actions %}
+                        {% element button type="submit" class="btn btn-outline-light w-100" tags="prominent,confirm" %}
+                            {% trans "Confirm" %}
+                        {% endelement %}
+                        
+                        {% if cancel_url %}
+                            {% element button href=cancel_url class="btn btn-outline-light w-100" tags="link,cancel" %}
+                                {% trans "Cancel" %}
+                            {% endelement %}
+                        {% else %}
+                            {% element button type="submit" form="logout-from-stage" class="btn btn-outline-light w-100" tags="link,cancel" %}
+                                {% trans "Cancel" %}
+                            {% endelement %}
+                        {% endif %}
+                    {% endslot %}
                 {% endelement %}
-            {% else %}
-                {% element button type="submit" form="logout-from-stage" tags="link,cancel" %}
-                    {% translate "Cancel" %}
-                {% endelement %}
-            {% endif %}
-        {% endslot %}
-    {% endelement %}
-    {% if not cancel_url %}
-        <form id="logout-from-stage"
-              method="post"
-              action="{% url 'account_logout' %}">
-            <input type="hidden" name="next" value="{% url 'account_login' %}">
-            {% csrf_token %}
-        </form>
-    {% endif %}
+
+                <!-- Hidden Logout Form -->
+                {% if not cancel_url %}
+                    <form id="logout-from-stage" method="post" action="{% url 'account_logout' %}">
+                        <input type="hidden" name="next" value="{% url 'account_login' %}">
+                        {% csrf_token %}
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock content %}
