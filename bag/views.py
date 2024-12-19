@@ -1,15 +1,12 @@
-from django.shortcuts import render, redirect
-
-# Create your views here.
+from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.http import JsonResponse
 
 def view_bag(request):
     """ A view that renders the bag contents page """
-
     return render(request, 'bag/bag.html')
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
-
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
@@ -21,4 +18,36 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
-    
+
+def adjust_bag(request, item_id):
+    """Adjust the quantity of the specified product to the specified amount"""
+    quantity = int(request.POST.get('quantity'))
+    bag = request.session.get('bag', {})
+
+    if quantity > 0:
+        bag[item_id] = quantity
+    else:
+        bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
+
+def remove_from_bag(request, item_id):
+    """Remove the item from the shopping bag"""
+    if request.method == 'POST':
+        try:
+            # Get the current shopping bag from the session
+            bag = request.session.get('bag', {})
+
+            # Remove the item from the bag if it exists
+            if item_id in bag:
+                bag.pop(item_id)
+
+            # Update the session with the new bag
+            request.session['bag'] = bag
+            return JsonResponse({'status': 'success'}, status=200)
+
+        except Exception as e:
+            return JsonResponse({'status': 'error', 'message': str(e)}, status=500)
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request method'}, status=400)
