@@ -39,7 +39,7 @@
     </div>
 </li>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none p-1" href="#">
+    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none p-1" href="{% url 'view_bag' %}">
         <div class="text-center">
             <i class="fas fa-shopping-bag" style="font-size: 1.2rem;"></i>
             <p class="my-0" style="font-size: 0.8rem;">
