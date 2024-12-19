@@ -2,16 +2,13 @@ html {
     height: 100%;
 }
 
-
-/*used from boutique ado to ensure homepage image lookes nice and fits within the project*/
-
+/* used from boutique ado to ensure homepage image looks nice and fits within the project */
 body {
     background: url('/media/background_image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-
 }
 
 /* from Bulma */
@@ -51,10 +48,9 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background:#323333;
     color: white !important;
 }
-
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -83,8 +79,8 @@ body {
     border: 1px solid black !important;
 }
 
-/*from tutorial--------------------------------------------------------*/
-span.badge{
+/* from tutorial -------------------------------------------------------- */
+span.badge {
     background: #323333 !important;
     color: #fff !important;
 }
@@ -126,9 +122,105 @@ span.badge{
     color: #000; 
     font-size: 1.5rem; 
 }
-/*FOOTER----------------------------------------------------------------------------------------------------------------------*/
+
+/* shopping bag specific styling --------------------------------------------------------*/
+.shopping-bag-container {
+    background-color: #323333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+
+/* Row adjustments for spacing inside shopping bag */
+.shopping-bag-container .row {
+    margin-top: 20px;
+}
+
+.my-0{
+    color: #e0e0e0;
+}
+
+/* Table Styling */
+.shopping-bag-container .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-bag-container .table th, .shopping-bag-container .table td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.shopping-bag-container .table th {
+    background-color: #444;
+    color: white;
+}
+
+.shopping-bag-container .table td {
+    background-color: #2f2f2f;
+}
+
+.shopping-bag-container .table .p-3 {
+    padding: 15px;
+}
+
+.shopping-bag-container .table img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the table is scrollable on smaller screens */
+.shopping-bag-container .table-responsive {
+    overflow-x: auto;
+}
+
+/* Total summary section */
+.shopping-bag-container h6, .shopping-bag-container h4 {
+    color: white;
+}
+
+/* Button styling for the action buttons */
+.shopping-bag-container .btn {
+    padding: 12px 25px;
+    text-transform: uppercase;
+    border-radius: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.shopping-bag-container .btn-outline-black {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.shopping-bag-container .btn-black {
+    color: white;
+    background-color: #000;
+    border: 2px solid #000;
+}
 
 
+
+/* Empty bag message styling */
+.shopping-bag-container .lead {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Total row padding */
+.shopping-bag-container .pt-5 {
+    padding-top: 30px;
+}
+
+
+
+/* FOOTER ---------------------------------------------------------------------------------------------------------------------- */
 #social-networks {
     text-align: center;
     padding: 10px 0;
@@ -153,7 +245,7 @@ span.badge{
 /* Product Box Styling */
 .image-container,
 .product-details-container {
-    background-color:  #323333; 
+    background-color: #323333; 
     color: #fff; 
     padding: 1.5rem; 
     border-radius: 8px; 
@@ -174,13 +266,11 @@ span.badge{
     color: #fff !important; 
 }
 
-
 .row > .col-12 {
     margin-bottom: 2rem; 
 }
 
-/*Product page styling*/
-
+/* Product page styling */
 .product-card {
     background-color: #323333; 
     border-radius: 10px;
@@ -214,10 +304,7 @@ span.badge{
     display: inline-block;
 }
 
-
 /* -------------------------------- Media Queries */
-
-/* this id is for helping me achieve getting my website to look nice on smaller screens!*/
 
 /* Default styling for small screens */
 #responsive-heading {
@@ -272,7 +359,7 @@ span.badge{
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
