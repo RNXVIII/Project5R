@@ -358,7 +358,135 @@
           "release_date": "2020-03-20",
           "publisher": "Nintendo"
        }
-    }
+    },
+   {
+          "pk": 19,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240019",
+              "name": "Halo Infinite",
+              "description": "The next chapter in the legendary Halo franchise, featuring an expansive open world and breathtaking visuals.",
+              "price": "59.99",
+              "category": 6,
+              "rating": "4.6",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/h/a/halo-infinite.jpg",
+              "image": "haloinfinite.jpg",
+              "genre": "First-Person Shooter",
+              "platform": "Xbox One, Xbox Series X/S",
+              "release_date": "2021-12-08",
+              "publisher": "Xbox Game Studios"
+          }
+      },
+      {
+          "pk": 20,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240020",
+              "name": "Gran Turismo 7",
+              "description": "Gran Turismo 7 delivers the ultimate driving experience with a stunning level of realism and over 400 cars to race.",
+              "price": "69.99",
+              "category": 7,
+              "rating": "4.7",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/g/r/gran_turismo_7_ps5.jpg",
+              "image": "grandturismo.jpg",
+              "genre": "Racing",
+              "platform": "PlayStation 5",
+              "release_date": "2022-03-04",
+              "publisher": "Sony Interactive Entertainment"
+          }
+      },
+      {
+          "pk": 22,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240022",
+              "name": "DualSense Wireless Controller",
+              "description": "Experience next-level gaming with haptic feedback and adaptive triggers on the PlayStation 5.",
+              "price": "69.99",
+              "category": 10,
+              "rating": "4.8",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/d/u/dualsense_controller.jpg",
+              "image": "dualsense.jpg",
+              "genre": "Accessories",
+              "platform": "PlayStation 5",
+              "release_date": "2020-11-12",
+              "publisher": "Sony"
+          }
+      },
+      {
+          "pk": 23,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240023",
+              "name": "Xbox Wireless Headset",
+              "description": "Immerse yourself in high-quality audio with this wireless headset for Xbox Series X|S and Xbox One.",
+              "price": "99.99",
+              "category": 9,
+              "rating": "4.7",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/x/b/xbox_wireless_headset.jpg",
+              "image": "xboxheadset.jpg",
+              "genre": "Accessories",
+              "platform": "Xbox One, Xbox Series X/S",
+              "release_date": "2021-03-16",
+              "publisher": "Microsoft"
+          }
+      },
+      {
+          "pk": 27,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240027",
+              "name": "PS3 Slim Console (Refurbished)",
+              "description": "A refurbished PlayStation 3 Slim console, perfect for retro gaming enthusiasts.",
+              "price": "129.99",
+              "category": 12,
+              "rating": "4.3",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/p/s/ps3_slim.jpg",
+              "image": "ps3.jpg",
+              "genre": "Console",
+              "platform": "PlayStation 3",
+              "release_date": "2009-09-01",
+              "publisher": "Sony"
+          }
+      },
+      {
+          "pk": 28,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240028",
+              "name": "Nintendo Switch OLED Model",
+              "description": "Enjoy brighter visuals and vibrant colors with the Nintendo Switch OLED edition.",
+              "price": "349.99",
+              "category": 3,
+              "rating": "4.8",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/n/i/nintendo-switch-oled.jpg",
+              "image": "oledswitch.jpg",
+              "genre": "Console",
+              "platform": "Nintendo Switch",
+              "release_date": "2021-10-08",
+              "publisher": "Nintendo"
+          }
+      },
+      {
+          "pk": 30,
+          "model": "products.product",
+          "fields": {
+              "sku": "gme20240030",
+              "name": "Sega Genesis (Refurbished)",
+              "description": "Relive the golden age of gaming with the refurbished Sega Genesis console.",
+              "price": "89.99",
+              "category": 12,
+              "rating": "4.2",
+              "image_url": "https://cdn.cdkeys.com/700x700/media/catalog/product/s/e/sega_genesis.jpg",
+              "image": "sega_console.jpg",
+              "genre": "Console",
+              "platform": "Sega Genesis",
+              "release_date": "1989-08-14",
+              "publisher": "Sega"
+          }
+      }
+  
+  
  
        
  ]
