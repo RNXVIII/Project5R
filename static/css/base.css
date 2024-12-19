@@ -70,13 +70,48 @@ body {
 }
 
 /*from tutorial--------------------------------------------------------*/
-
-span.badge {
+span.badge{
     background: #323333 !important;
     color: #fff !important;
 }
 
+/* Back-to-Top Button */
+.btt-button {
+    height: 50px; 
+    width: 50px;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    background-color: #f8f9fa; 
+    border: 2px solid #000; 
+    border-radius: 50%; 
+    z-index: 1050; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+    margin-bottom: 30px;
+}
 
+.btt-button:hover {
+    background-color: #e0e0e0; 
+    border-color: #444;
+}
+
+.btt-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btt-link i {
+    color: #000; 
+    font-size: 1.5rem; 
+}
 /*FOOTER----------------------------------------------------------------------------------------------------------------------*/
 
 
