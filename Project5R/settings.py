@@ -97,7 +97,7 @@ LOGIN_REDIRECT_URL = '/'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('postgres://uctxjfqt1dq:bW262x7Hti4k@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/dock_omen_silk_40159?sslmode=require&options=endpoint%3Dep-gentle-mountain-a23bxz6h'))
+        'default': dj_database_url.parse(os.environ['DATABASE_URL'])
     }
 else:
     DATABASES = {
