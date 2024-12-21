@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2u&*i@py^hyk2m%%$l2b6krpk276@zyq@1cbc$5xffpgjs9rq)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['project5r-c150d22c7c1d.herokuapp.com', 'localhost']
 
@@ -92,12 +93,14 @@ LOGIN_REDIRECT_URL = '/'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse(
+        'postgres://uctxjfqt1dq:bW262x7Hti4k@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/dock_omen_silk_40159?sslmode=require&options=endpoint%3Dep-gentle-mountain-a23bxz6h'
+    )
 }
+
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 # Password validation
